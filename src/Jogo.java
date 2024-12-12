@@ -63,4 +63,12 @@ public class Jogo {
 
     }
 
+    //Metodo para encerra o jogo
+    public void encerrarJogo() {
+        System.out.println("Jogo Encerrado! ");
+        System.out.println("Pontuação Final: " + potnuacao + "pontos. ");
+        System.out.println("Numeros acertados: " + numerosAcertados);
+        System.out.println("Numeros errados: " + numerosErrados);
+    }
+
 }

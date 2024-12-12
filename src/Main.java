@@ -17,6 +17,9 @@ public class Main {
             //Escolher o nivel de dificuldade.
             int limiteSuperior = jogo.escolhaONivel(scanner);
 
+            // Jogar uma rodada
+            jogo.JogarRodada(limiteSuperior, scanner);
+
         }
     }
 }
