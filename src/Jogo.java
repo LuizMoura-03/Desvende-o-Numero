@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -44,7 +44,7 @@ public class Jogo {
         int numeroSortedo = random.nextInt(limiteSuperior) + 1;  // Gera um numero aleatorio dentro od intervalo definido.
 
         // Solicitando um palpite do jogador
-        System.out.println("Digite seu palpite (entre1 e " + limiteSuperior + " : ");
+        System.out.println("Digite seu palpite (entre 1 e " + limiteSuperior + "): ");
         int palpite = scanner.nextInt();
 
         // Avaliando o palpite e atualizando a pontuação
@@ -66,9 +66,9 @@ public class Jogo {
     //Metodo para encerra o jogo
     public void encerrarJogo() {
         System.out.println("Jogo Encerrado! ");
-        System.out.println("Pontuação Final: " + potnuacao + "pontos. ");
-        System.out.println("Numeros acertados: " + numerosAcertados);
-        System.out.println("Numeros errados: " + numerosErrados);
+        System.out.println("Pontuação Final: " + potnuacao + " pontos. ");
+        System.out.println("Números acertados: " + numerosAcertados);
+        System.out.println("Números errados: " + numerosErrados);
     }
 
 }
