@@ -5,13 +5,13 @@ import java.util.Scanner;
 
 public class Jogo {
 
-    private int potnuacao;
+    private int pontuacao;
     private ArrayList<Integer> numerosAcertados;
     private ArrayList<Integer> numerosErrados;
     private Random random;   // Objeto para gerar números aleatórios.
 
     public Jogo() {                 // Incia as variaveis
-        this.potnuacao = 0;
+        this.pontuacao = 0;
         this.numerosAcertados = new ArrayList<>();
         this.numerosErrados = new ArrayList<>();
         this.random = new Random();
@@ -50,11 +50,11 @@ public class Jogo {
         // Avaliando o palpite e atualizando a pontuação
         if (palpite == numeroSortedo) {
             System.out.println("Parabéns! Voçê acertou o numero e ganhou 10 pontos!");
-            potnuacao += 10;
+            pontuacao += 10;
             numerosAcertados.add(numeroSortedo);
         } else if (Math.abs(palpite - numeroSortedo) == 1) {
-            System.out.println("Quase lá! Voçê estava a 1(um) numero de distancia do numero sorteado e ganhou 5 pontos");
-            potnuacao += 5;
+            System.out.println("Quase lá! Voçê estava a 1(um) numero de distancia do numero sorteado e ganhou 5 pontos, " + "numero sorteado foi: "  + numeroSortedo);
+            pontuacao += 5;
             numerosErrados.add(palpite);
         } else {
             System.out.println("Que pena! Você errou. O numero sorteado era " + numeroSortedo + ": ");
@@ -66,7 +66,7 @@ public class Jogo {
     //Metodo para encerra o jogo
     public void encerrarJogo() {
         System.out.println("Jogo Encerrado! ");
-        System.out.println("Pontuação Final: " + potnuacao + " pontos. ");
+        System.out.println("Pontuação Final: " + pontuacao + " pontos. ");
         System.out.println("Números acertados: " + numerosAcertados);
         System.out.println("Números errados: " + numerosErrados);
     }

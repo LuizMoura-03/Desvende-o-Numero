@@ -24,7 +24,7 @@ Para executar o jogo, voçê precisa:
 3. Com o palpite do jogador:
 * Acertou? +10 pontos.
 * Errou por apenas 1 um numero ? +5 pontos.
-* Errou ? Nenhum ponto, mas o numero sera exibido.
+* Errou? Nenhum ponto, mas o numero sera exibido.
 4. Continue jogando até decidir parar.
 
 
